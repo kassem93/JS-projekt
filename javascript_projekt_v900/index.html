@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <meta charset="utf-8" />
+  <title>Flappy Bird Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div id ="wrapper">
+        <!-- Knappar för musiken -->
+        
+        <div id ="knappar1">
+            <p>Change the music:</p>
+            
+    <!-- Audio -->
+    <button id="player" type="button">
+            Fire Within
+    </button>
+        <audio id="bgMusic_firebg">
+          <source src="assets/firebg.mp3" type="audio/mpeg">
+
+        </audio>
+    
+        <button id="player1" type="button">
+            Odyssey
+    </button>
+        <audio id="bgMusic_odybg">
+          <source src="assets/odybg.mp3" type="audio/mpeg">
+
+        </audio>
+    
+         <button id="player2" type="button">
+            Caprisun-Cathedral
+    </button>
+        <audio id="bgMusic_capbg">
+          <source src="assets/capbg.mp3" type="audio/mpeg">
+
+        </audio>
+            </div><!-- end knappar1 -->
+        
+        <div class="clearfix"></div>
+  <div id="gameDiv"> </div>
+    
+        <div id="knappar">
+        <p>Change the character:</p>
+    <button type="button" id="sprites1">Angry Bird</button>
+    <button type="button" id="sprites2">Cat</button>
+    <button type="button" id="sprites3">Penguin</button>
+    <br>
+    <br>
+        <p>Change the background color:</p>
+   <button type="button" id="bg1">City</button>
+    <button type="button" id="bg2">Desert</button>
+    <button type="button" id="bg3">Space</button>
+    <br>
+    <br>
+            <p> Change the velocity:</p>
+    <button type="button" id="v">Fast-mode</button>
+    <button type="button" id="v1">Slow-mode</button>
+    <button type="button" id="v0">Reset speed</button>
+            <div class="clearfix"></div>
+    <br>
+    <br>
+    <button type="button" id="paus">Save & Quit</button>
+            <div id="result"></div>
+
+        </div><!-- knappar ends -->
+        
+            <script type="text/javascript" src="phaser.min.js"></script>
+<script type ="javascript" src="dist/sweetalert.min.js"></script> 
+        <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+      <script type="text/javascript" src="main.js"></script>
+            </div><!-- wrapper ends -->
+
+</body>
+
+</html>
